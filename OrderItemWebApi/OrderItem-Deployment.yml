@@ -1,0 +1,34 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: OrderItemWebApi-deployment
+  labels:
+    app: OrderItemWebApi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: OrderItemWebApi
+  template:
+    metadata:
+      labels:
+        app: OrderItemWebApi
+    spec:
+      containers:
+      - name: OrderItemWebApi
+        image: myacr20220619.azurecr.io/myapirepo:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: myacrcredentails
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: OrderItemWebApisvc
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app:OrderItemWebApi
