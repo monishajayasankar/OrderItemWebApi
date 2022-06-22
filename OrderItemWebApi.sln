@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderItemWebApi", "OrderItemWebApi\OrderItemWebApi.csproj", "{20AC5759-C734-4684-82ED-99E048EFF959}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20AC5759-C734-4684-82ED-99E048EFF959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20AC5759-C734-4684-82ED-99E048EFF959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20AC5759-C734-4684-82ED-99E048EFF959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20AC5759-C734-4684-82ED-99E048EFF959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {128A3357-BA47-4B17-AFA5-57DB3A8B9EC9}
+	EndGlobalSection
+EndGlobal
